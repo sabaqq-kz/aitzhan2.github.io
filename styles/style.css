@@ -1,0 +1,635 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+/* Шрифты */
+@font-face {
+    font-family: Andantino;
+    src: url(../fonts/KZ_Andantino_script_kz.ttf), format("ttf");
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url(../fonts/Montserrat-VariableFont_wght.ttf), format("ttf");
+}
+
+/* khabarlama */
+.unsupported {
+    display: none;
+    position: absolute;
+    text-align: center;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../images/unsupported.jpg) center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.un-text {
+    font-family: 'Andantino';
+    font-size: 80px;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+
+}
+
+/* Фон */
+.bg img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg.jpg) center/cover no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -10;
+}
+
+/* intro */
+.intro {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.intro-image img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.intro_text {
+    position: absolute;
+    /* Это позволяет нам позиционировать текст поверх изображения */
+    bottom: 20%;
+    /* Отступ сверху */
+    left: 40%;
+    /* Выравнивание по центру */
+    transform: translateX(-50%);
+    /* Центрируем текст по горизонтали */
+    color: #ffffff;
+    /* Цвет текста */
+    font-weight: bold;
+    /* Жирный шрифт */
+    text-align: center;
+}
+
+.intro_text p {
+    width: 400px;
+    font-family: 'Andantino';
+    font-weight: normal;
+    font-size: 45px;
+}
+
+/* Music player */
+.player {
+    position: absolute;
+    /* top: 75%; */
+    bottom: 10%;
+    left: 50%;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+/* Контейнер для вращающегося текста */
+.rotating-container {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* Чтобы элемент не вылезал за пределы */
+    z-index: 1;
+}
+
+.rotating-container svg {
+    animation: rotate 5s linear infinite;
+}
+
+.playStopBtn {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 999;
+}
+
+.playStopBtn:hover {
+    background-color: #ebeaea;
+    transform: scale(1.05);
+}
+
+.playStopBtn:active {
+    transform: scale(1.03);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.rotating-text {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4CAF50;
+    transform-origin: center;
+    white-space: nowrap;
+}
+
+.rotating-text:nth-child(1) {
+    transform: rotate(0deg) translateX(120px);
+}
+
+.rotating-text:nth-child(2) {
+    transform: rotate(45deg) translateX(120px);
+}
+
+.rotating-text:nth-child(3) {
+    transform: rotate(90deg) translateX(120px);
+}
+
+.rotating-text:nth-child(4) {
+    transform: rotate(135deg) translateX(120px);
+}
+
+.rotating-text:nth-child(5) {
+    transform: rotate(180deg) translateX(120px);
+}
+
+.rotating-text:nth-child(6) {
+    transform: rotate(225deg) translateX(120px);
+}
+
+.rotating-text:nth-child(7) {
+    transform: rotate(270deg) translateX(120px);
+}
+
+.rotating-text:nth-child(8) {
+    transform: rotate(315deg) translateX(120px);
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.lead {
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+}
+
+svg {
+    font-family: 'Montserrat';
+    display: block;
+    margin: 0 auto;
+}
+
+/* Shakiry */
+.shakiry {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+
+}
+
+.konak {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.konak p {
+    color: #0f3e61;
+    font-family: 'Andantino';
+    font-weight: normal;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.shakiru-text p {
+    color: #0f3e61;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* ТОЙ КҮНІ */
+.toi-kuni {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.toi,
+.data {
+    width: 100%;
+    color: #0f3e61;
+    margin: 0 auto;
+}
+
+.toi {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.data {
+    font-family: 'Andantino';
+    width: 300px;
+    margin-bottom: 15px;
+}
+
+/* Элементы */
+.element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* Той иелері */
+.toi-ueleri {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+.toi-text {
+    color: #0f3e61;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.toi-text h1 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.toi-text h2 {
+    font-family: 'Andantino';
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+/* Өткізілетін орны */
+.orny {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: #0f3e61;
+
+}
+
+.otkiz {
+    width: 100%;
+    font-family: 'Andantino';
+    margin-bottom: 25px;
+}
+
+.adress {
+    font-family: 'Montserrat';
+    margin-bottom: 10px;
+}
+
+.toikhana {
+    font-family: 'Montserrat' serif;
+}
+
+.gis {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.gis img {
+    width: 50%;
+}
+
+/* karta */
+.map {
+    border-top: 1px solid #a3a3a3;
+    box-shadow: 0 5px 10px #000;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.map iframe {
+    margin: 0 auto;
+    width: 100%;
+    height: 40vh;
+}
+
+
+/* toi bagdarlamasy */
+.toi-bagdarlama {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+    color: #0f3e61;
+}
+
+.bagdarlama-text {
+    font-family: 'Andantino';
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+
+.bagdarlama {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.bagdarlama-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bagdarlama-item img {
+    border-radius: 50%;
+    max-width: 100%;
+    width: 120px;
+    height: 120px;
+}
+
+.time {
+    width: 100px;
+    font-family: 'Montserrat';
+    text-align: center;
+}
+
+.ornek {
+    max-width: 100%;
+    height: 60%;
+    width: 5%;
+    margin: 0 auto;
+
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/* Канал телеграм */
+.kanal {
+    text-align: center;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+
+    color: #0f3e61;
+}
+
+.kanal-text {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.kanal-text1 {
+    font-family: 'Montserrat';
+    font-size: 15px;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+/* knopka */
+.telegram-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #0088cc;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 5px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.telegram-button:hover {
+    background-color: #0077b5;
+    transform: scale(1.1);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+.telegram-button:active {
+    transform: scale(1.1);
+    background-color: #0077b5;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для иконки */
+.telegram-button i {
+    margin-right: 15px;
+    font-size: 22px;
+    /* Размер иконки */
+    transition: transform 0.7s ease;
+}
+
+.telegram-button:active i {
+    transform: translateX(10px);
+    /* Двигаем иконку при наведении */
+}
+
+/* Анимация кнопки при появлении */
+.telegram-button {
+    animation: buttonAnimation 3s ease-out forwards;
+}
+
+@keyframes buttonAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Таймер */
+.toigadein {
+    margin-bottom: 35px;
+    color: #0f3e61;
+}
+
+.dein {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.toi-uakit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#time {
+    width: 100%;
+    height: 10vh;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.block span {
+    font-size: 15px;
+    font-weight: normal;
+}
+
+.days {
+    margin-right: 25px;
+}
+
+.hours {
+    margin-right: 25px;
+}
+
+.minutes {
+    margin-right: 25px;
+}
+
+.finished-message {
+    width: 100%;
+    text-align: center;
+    animation: message 6s ease-in-out infinite;
+}
+
+@keyframes message {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+}
+
+/* Көрімдік */
+.korimdik {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.korimdik-text {
+    font-family: 'Montserrat';
+    color: #0f3e61;
+    margin: 0 auto;
+    width: 300px;
+}
+
+.nomer {
+    font-family: 'Montserrat';
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 30px;
+    display: inline-flex;
+    align-items: center;
+    background: #d4a373;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-decoration: none;
+    gap: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nomer img {
+    width: 40px;
+    height: 40px;
+
+    position: absolute;
+    right: 0;
+    left: 85%;
+    top: -50%;
+    bottom: 0;
+    transform: rotate(15deg);
+}
+
+/* Тойға қатысу */
+.toiga-katisu1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #0f3e61;
+}
+
+.katisu1 {
+    font-family: 'Montserrat';
+    font-weight: 500;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,397 @@
+@media (max-width:2560px) {
+    .un-text {
+        font-size: 190px;
+    }
+
+    .bg,
+    .intro,
+    .player,
+    .shakiry,
+    .toi-kuni,
+    .toi-ueleri,
+    .orny,
+    .map,
+    .toi-bagdarlama,
+    .kanal, 
+    .toigadein,
+    .korimdik,
+    .toiga-katisu1
+     {
+        display: none;
+    }
+}
+
+@media (max-width:1440px) {
+    .un-text {
+        font-size: 100px;
+    }
+
+    .bg {
+        display: none;
+    }
+}
+
+@media (max-width:1200px) {
+    .un-text {
+        font-size: 80px;
+    }
+
+    .bg {
+        display: none;
+    }
+
+}
+
+@media (max-width:768px) {
+    .un-text {
+        font-size: 60px;
+    }
+
+    .bg {
+        display: none;
+    }
+
+}
+
+@media (max-width:425px) {
+
+    /* ХАБАРЛАМА */
+    .unsupported {
+        display: none;
+    }
+
+    .bg,
+    .intro,
+    .player,
+    .shakiry,
+    .toi-kuni,
+    .toi-ueleri,
+    .orny,
+    .map,
+    .toi-bagdarlama,
+    .kanal, 
+    .toigadein,
+    .korimdik,
+    .toiga-katisu1
+     {
+        display: block;
+    }
+
+    /* Музыка кнопка */
+    .player {
+        /* top: 85%; */
+        bottom: 5%;
+        left: 0%;
+    }
+
+    .playStopBtn {
+        width: 55px;
+        height: 55px;
+        font-size: 17px;
+    }
+
+    .rotating-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    /* Тойға шақыру текст */
+    .konak p {
+        font-size: 50px;
+    }
+
+    .shakiru-text p {
+        font-size: 18px;
+    }
+
+    .toi-text h1 {
+        font-size: 25px;
+    }
+
+    .toi-text h2 {
+        font-size: 35px;
+    }
+
+    .toi {
+        font-size: 25px;
+    }
+
+    .data {
+        font-size: 30px;
+    }
+
+    .otkiz {
+        font-size: 45px;
+    }
+
+    .adress {
+        font-size: 20px;
+    }
+
+    .toikhana {
+        font-size: 30px;
+    }
+
+    .dein {
+        margin-top: 25px;
+    }
+
+    #time {
+        font-size: 25px;
+    }
+
+    .finished-message {
+        font-size: 20px;
+    }
+
+
+    .uakit {
+        font-size: 55px;
+    }
+
+    .bagdarlama-text {
+        font-size: 40px;
+    }
+
+    .time {
+        font-size: 18px;
+    }
+
+
+    /* Көрімдік */
+    .korimdik-text {
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+    .nomer {
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .katisu1 {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width:375px) {
+
+    /* Музыка кнопка */
+    .player {
+        /* top: 85%; */
+        bottom: 5%;
+        left: 0%;
+    }
+
+    .playStopBtn {
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    .rotating-container {
+        width: 90px;
+        height: 90px;
+    }
+
+    /* Тойға шақыру текст */
+    .konak p {
+        font-size: 40px;
+    }
+
+    .shakiru-text p {
+        font-size: 16px;
+    }
+
+    /* Той иелері */
+    .toi-text h1 {
+        font-size: 20px;
+    }
+
+    .toi-text h2 {
+        font-size: 35px;
+    }
+
+    /* Той күні */
+    .toi {
+        font-size: 20px;
+    }
+
+    .data {
+        font-size: 35px;
+    }
+
+    /* Өткізілетін орны */
+    .otkiz {
+        font-size: 35px;
+    }
+
+    .adress {
+        font-size: 18px;
+    }
+
+    .toikhana {
+        font-size: 28px;
+    }
+
+    /* Таймер */
+    .dein {
+        margin-top: 25px;
+    }
+
+    #time {
+        font-size: 23px;
+    }
+
+    .finished-message {
+        font-size: 18px;
+    }
+
+    .uakit {
+        font-size: 50px;
+    }
+
+    /* Той бағдарламасы */
+    .bagdarlama-text {
+        font-size: 35px;
+    }
+
+    .time {
+        font-size: 16px;
+    }
+
+    .bagdarlama-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /* Көрімдік */
+    .korimdik-text {
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+    .nomer {
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .katisu1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:320px) {
+    
+    .intro_text p {
+        font-size: 35px;
+        margin-bottom: 10px;
+    }
+
+    /* Музыка кнопка */
+    .player {
+        /* top: 85%; */
+        bottom: 5%;
+        left: 0%;
+    }
+
+    .playStopBtn {
+        width: 45px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .rotating-container {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Тойға шақыру текст */
+    .konak p {
+        font-size: 35px;
+    }
+
+    .shakiru-text p {
+        font-size: 15px;
+    }
+
+    /* Той иелері */
+    .toi-text h1 {
+        font-size: 18px;
+    }
+
+    .toi-text h2 {
+        font-size: 33px;
+    }
+
+    /* Той күні */
+    .toi {
+        font-size: 18px;
+    }
+
+    .data {
+        font-size: 30px;
+    }
+
+    /* Өткізілетін орны */
+    .otkiz {
+        font-size: 35px;
+    }
+
+    .adress {
+        font-size: 16px;
+    }
+
+    .toikhana {
+        font-size: 26px;
+    }
+
+    /* Таймер */
+    .dein {
+        margin-top: 23px;
+    }
+
+    #time {
+        font-size: 23px;
+    }
+
+    .finished-message {
+        font-size: 18px;
+    }
+
+    .uakit {
+        font-size: 50px;
+    }
+
+    /* Той бағдарламасы */
+    .bagdarlama-text {
+        font-size: 33px;
+    }
+
+    .time {
+        font-size: 15px;
+    }
+
+    .bagdarlama-item img {
+        width: 100px;
+        height: 100px;
+    }
+
+
+    /* Көрімдік */
+    .korimdik-text {
+        font-size: 16px;
+        margin-top: 35px;
+    }
+
+    .nomer {
+        font-size: 14px;
+        font-weight: normal;
+    }
+
+    .katisu1 {
+        font-size: 16px;
+    }
+}
